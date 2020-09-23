@@ -1,19 +1,22 @@
-#include <stdint.h>
-#include <LinkedList.h>
 #include "sequencer.h"
-#include "sequence-state.h"
-#include "sequence.h"
-#include "pattern.h"
-#include "pattern-tick.h"
-#include "note.h"
+#include <LinkedList.h>
+#include <stdint.h>
+#include "data/note.h"
+#include "data/pattern-tick.h"
+#include "data/pattern.h"
+#include "data/sequence-state.h"
+#include "data/sequence.h"
+
+using namespace uhms::sequencer::data;
 
 class Sequencer {
-private:
-    uint8_t bpm { 120 };
+   private:
+    uint8_t bpm{120};
     LinkedList<SequenceState*> states;
     uint8_t defaultNoteDuration;
     uint8_t numberOfTicksToProcess;
-public:
+
+   public:
     Sequencer() : Sequencer(120u) {}
 
     Sequencer(uint8_t bpm) {
@@ -30,5 +33,4 @@ public:
         this->states = LinkedList<SequenceState*>();
         this->states.add(new SequenceState(new Sequence()));
     }
-
 };
