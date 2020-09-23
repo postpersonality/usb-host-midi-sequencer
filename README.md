@@ -1,6 +1,10 @@
 # USB Host MIDI Sequencer
 
-<description tba>
+(project description tba)
+
+## Device layout
+
+[![Device layout image](docs/wireframe.png)](https://wireframe.cc/Jiip4M)
 
 ## BOM
 
