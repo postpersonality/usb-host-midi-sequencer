@@ -7,11 +7,11 @@ namespace uhms {
 namespace sequencer {
 namespace data {
 
-struct PatternTick {
-    uint8_t tickNumber;
-    LinkedList<Note*> notes{LinkedList<Note*>()};
+struct PatternRow {
+    uint8_t notePitch;
+    LinkedList<Note*> notes;
 
-    PatternTick() = default;
+    PatternRow() = default;
 };
 
 }  // namespace data

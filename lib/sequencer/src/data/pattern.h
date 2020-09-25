@@ -1,14 +1,14 @@
 #pragma once
 #include <LinkedList.h>
 #include <stdint.h>
-#include "pattern-tick.h"
+#include "pattern-row.h"
 
 namespace uhms {
 namespace sequencer {
 namespace data {
 
 struct Pattern {
-    LinkedList<PatternTick*> ticks{LinkedList<PatternTick*>()};
+    LinkedList<PatternRow*> rows;
 
     Pattern() = default;
 };

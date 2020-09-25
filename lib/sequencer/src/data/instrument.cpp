@@ -2,8 +2,7 @@
 
 using namespace uhms::sequencer::data;
 
-Instrument::Instrument(uint8_t patch, uint8_t bank, uint8_t channel) {
-    this->patch = patch;
-    this->bank = bank;
+Instrument::Instrument(uint8_t program, uint8_t channel) {
+    this->program = program;
     this->channel = channel;
 }

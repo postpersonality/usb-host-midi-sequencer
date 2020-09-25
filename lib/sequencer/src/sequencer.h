@@ -3,7 +3,7 @@
 #include <stdint.h>
 #include "data/instrument.h"
 #include "data/note.h"
-#include "data/pattern-tick.h"
+#include "data/pattern-row.h"
 #include "data/pattern.h"
 #include "data/sequence-state.h"
 #include "data/sequence.h"
